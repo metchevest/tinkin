@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+## Tinkin React Boilerplate 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a simple React Boilerplate created by Tinkin in order to help you with a basic folder structure and configuring useful libraries. You can use it as a base for the project and customize it as you want.
 
-In the project directory, you can run:
+>! Remember to delete this README when you create your website.
 
-### `yarn start`
+## Technologies used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* **JS**: It was chosen `JS` and not `TypeScript` for simplicity of configuration and for being more known and easier to use than `TypeScript`.
+* **SASS**: We chose `SASS` and not `CSS` for the advantages it offers such as `imports` and the structure in `tree` to put the styles.
+* **React Testing Library**: We chose `React Testing Library` and not `Enzyme` for the reasons described in the official documentation of [React Testing Library](https://testing-library.com/docs/react-testing-library/intro#the-problem).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> If you are not familiar or do not like any of these technologies used you can change them and configure the boilerplate as you feel more comfortable.
 
-### `yarn test`
+## Boilerplate Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **assets/**: This folder contains all the images used in the project, you can add folders like `images` and `icons` to give it a better structure.
+* **components/**: In this folder as its name indicates all the components of the application are located, for this boilerplate a simple component was created for example.
+* **constant/**: In this folder should be put all the constants of the application, as texts or enums needed.
+* **scss/**: In this folder are the styles of the application, if you want you can create additional folders inside it to give more structure as: `components` to place the styles only referring to the components of the application.
+* **tests/**: As the name says, in this folder are located the tests of the application components.
 
-### `yarn build`
+You can add or remove the folders you think necessary.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can use [nvm](https://github.com/nvm-sh/nvm) to install the `node` version used when creating the boilerplate by executing the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+nvm use
+```
 
-### `yarn eject`
+To install the dependencies you can use `yarn` or `npm`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+yarn install
+```
+o
+```
+npm i
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the project in development mode run the following command:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+yarn start
+```
+o
+```
+npm run start
+```
 
-## Learn More
+This will open a tab in the browser configured by default on port `3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can see all available scripts in the `package.json` file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Automatic unit tests
 
-### Code Splitting
+The boilerplate is configured with automatic testing using the `React Testing Library`. If you haven't heard of this library before you can see its official documentation [here](https://testing-library.com/docs/react-testing-library/intro).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run the tests use the command:
 
-### Analyzing the Bundle Size
+```
+yarn test
+```
+o
+```
+npm t
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you don't want to use `React Testing Library`, you can remove it from the dependencies and install the library of your choice.
