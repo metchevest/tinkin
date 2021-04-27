@@ -20,7 +20,7 @@ This is a simple React Boilerplate created by Tinkin in order to help you with a
 * **components/**: This directory contains all the components of the application, for this boilerplate a simple component was created as example.
 * **constants/**: This directory should contain all the constants of the application, whether as text or as enum.
 * **scss/**: In this folder are the styles of the application, if you want you can create additional folders inside it to give it more structure, such as `components` to place the styles only referring to the components of the application.
-* **tests/**: As the name says, in this folder are located the tests of the application components.
+* **tests/**: Contains the automatic tests of the application.
 
 You can add or remove the folders you think necessary.
 
