@@ -60,7 +60,7 @@ You can see all available scripts in the `package.json` file.
 
 ## Automatic unit tests
 
-The boilerplate is configured with automatic testing using the `React Testing Library`. If you haven't heard of this library before you can see its official documentation [here](https://testing-library.com/docs/react-testing-library/intro).
+The boilerplate is configured with automatic testing using `React Testing Library`. If you haven't heard of this library before you can find its official documentation [here](https://testing-library.com/docs/react-testing-library/intro).
 
 To run the tests use the command:
 
