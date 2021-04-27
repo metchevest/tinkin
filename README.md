@@ -17,7 +17,7 @@ This is a simple React Boilerplate created by Tinkin in order to help you with a
 ## Boilerplate Structure
 
 * **assets/**: This folder contains all the images used in the project, you can add folders like `images` and `icons` to give it a better structure.
-* **components/**: In this folder as its name indicates all the components of the application are located, for this boilerplate a simple component was created for example.
+* **components/**: This directory contains all the components of the application, for this boilerplate a simple component was created as example.
 * **constant/**: In this folder should be put all the constants of the application, as texts or enums needed.
 * **scss/**: In this folder are the styles of the application, if you want you can create additional folders inside it to give more structure as: `components` to place the styles only referring to the components of the application.
 * **tests/**: As the name says, in this folder are located the tests of the application components.
