@@ -22,7 +22,7 @@ This is a simple React Boilerplate created by Tinkin in order to help you with a
 * **scss/**: In this folder are the styles of the application, if you want you can create additional folders inside it to give it more structure, such as `components` to place the styles only referring to the components of the application.
 * **tests/**: Contains the automatic tests of the application.
 
-You can add or remove the folders you think necessary.
+You can add, remove or modify this directory structure as you think necessary.
 
 ## Install Dependencies
 
