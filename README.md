@@ -4,7 +4,7 @@
 
 This is a simple React Boilerplate created by Tinkin in order to help you with a basic folder structure and the configuration of some useful libraries. You can use it as a base for your project and customize it as you see fit.
 
->! Remember to delete this README when you create your website.
+>! Remember to replace this README when you create your project.
 
 ## Technologies used
 
