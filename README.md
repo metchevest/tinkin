@@ -8,7 +8,7 @@ This is a simple React Boilerplate created by Tinkin in order to help you with a
 
 ## Technologies used
 
-* **JS**: It was chosen `JS` and not `TypeScript` for simplicity of configuration and for being more known and easier to use than `TypeScript`.
+* **JS**: Javascript was chosen instead of TypeScript for its simplicity of configuration and for being more commonly known and easier to use than TypeScript.
 * **SASS**: We chose `SASS` and not `CSS` for the advantages it offers such as `imports` and the structure in `tree` to put the styles.
 * **React Testing Library**: We chose `React Testing Library` and not `Enzyme` for the reasons described in the official documentation of [React Testing Library](https://testing-library.com/docs/react-testing-library/intro#the-problem).
 
