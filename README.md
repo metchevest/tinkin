@@ -12,7 +12,7 @@ This is a simple React Boilerplate created by Tinkin in order to help you with a
 * **SASS**: We chose SASS instead of CSS to manage the styling, for the advantages it offers such as `imports` and its tree structure which helps in keeping everything more organized.
 * **React Testing Library**: We chose `React Testing Library` and not `Enzyme` for the reasons described in the official documentation of [React Testing Library](https://testing-library.com/docs/react-testing-library/intro#the-problem).
 
-> If you are not familiar or do not like any of these technologies used you can change them and configure the boilerplate as you feel more comfortable.
+> If you are not familiar or do not like any of these technologies, you can change them and tweak this boilerplate as you feel more comfortable.
 
 ## Boilerplate Structure
 
