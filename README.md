@@ -1,28 +1,9 @@
-## Tinkin React Boilerplate 
+## Tinkin React Boilerplate
 
 ## Description
 
-This is a simple React Boilerplate created by Tinkin in order to help you with a basic folder structure and the configuration of some useful libraries. You can use it as a base for your project and customize it as you see fit.
-
->! Remember to replace this README when you create your project.
-
-## Technologies used
-
-* **JS**: Javascript was chosen instead of TypeScript for its simplicity of configuration and for being more commonly known and easier to use than TypeScript.
-* **SASS**: We chose SASS instead of CSS to manage the styling, for the advantages it offers such as `imports` and its tree structure which helps in keeping everything more organized.
-* **React Testing Library**: We chose `React Testing Library` and not `Enzyme` for the reasons described in the official documentation of [React Testing Library](https://testing-library.com/docs/react-testing-library/intro#the-problem).
-
-> If you are not familiar or do not like any of these technologies, you can change them and tweak this boilerplate as you feel more comfortable.
-
-## Boilerplate Structure
-
-* **assets/**: This directory contains all the images used in the project, you can add folders like `images` and `icons` to give it a better structure.
-* **components/**: This directory contains all the components of the application, for this boilerplate a simple component was created as example.
-* **constants/**: This directory should contain all the constants of the application, whether as text or as enum.
-* **scss/**: In this directory are the styles of the application, if you want you can create additional folders inside it to give it more structure, such as `components` to place the styles only referring to the components of the application.
-* **tests/**: Contains the automatic tests of the application.
-
-You can add, remove or modify this directory structure as you think necessary.
+This project render the recipes in the data mock and let the user to add new recipes, show the recipes details and edit them.
+Also, the app let the user filter the recipes based on the cooked before attribute.
 
 ## Install Dependencies
 
@@ -37,7 +18,9 @@ To install the dependencies you can use `yarn` or `npm`.
 ```
 yarn install
 ```
+
 o
+
 ```
 npm i
 ```
@@ -49,7 +32,9 @@ To run the project in development mode run the following command:
 ```
 yarn start
 ```
+
 o
+
 ```
 npm run start
 ```
@@ -67,9 +52,90 @@ To run the tests use the command:
 ```
 yarn test
 ```
+
 o
+
 ```
 npm t
 ```
 
 If you don't want to use `React Testing Library`, you can remove it from the dependencies and install the library of your choice.
+
+## Project Description
+
+    <Recipes>
+      |
+      —> <Filters>
+      |
+      —> <RecipesList>
+      |		|
+      |		—> <Filters>
+      |   —> <Reviews>
+      |
+      —> <RecipeNew>
+      |
+      —> <Modal>
+      |
+      —> <RecipeEdit>
+      |
+      —> <RecipeForm>
+      |
+      —> <CookedSelector>
+
+    Recipes:
+      Is the main component where the state is held.
+
+      const [recipes, setRecipes] = useState(RECIPE_DATA);
+
+      This is the state to keep the recipes, these are the recipes that later will be filtered according to cookedBefore.
+
+    const [addRecipe, setAddRecipe] = useState(false);
+
+    Is a state to control the show/hide of a panel to create a new recipe. For this
+
+
+    Recipe List
+      Is the component that renders the table with the recipes.
+
+    Filters
+      Is the component that shows the filters of the recipes to show. Let the user to filter with the cookedBefore of the recipe.
+      Also holds the input to perform the search.
+
+    Reviews
+      Renders the stars based on the recipe's review
+
+    RecipeNew
+
+      This component uses a Modal component to show the form to create a new recipe.
+
+    RecipeEdit
+
+      Let's the user edit the recipe
+
+    RecipeForm
+
+      A formik form reusable to create a new recipe and also to edit the recipe.
+
+    CookedSelector
+
+      The custom select to provide the look desired for the selection
+
+    Modal
+
+      A reusable component to show information also It can make the user take decisions.
+
+    DataMock -> data
+
+      The mock of the data to render and to test.
+
+    variables
+
+      The export of constant variables
+
+## Notes
+
+- I tested only the functionality for the Basic Challenge, but developed more functionalities than that challenge.
+- I used the state to show/hide components, the best way to do that is by React Router, I decided to cut this corner.
+- I didn’t make the mobile version of the app because I haven’t the mock.
+- I didn’t make the errors on the form, I runned out of time.
+- The buttons of the form aren’t changing state when the form doesn’t have errors.
